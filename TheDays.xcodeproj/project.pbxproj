@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45176B211C7555B700246809 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B1F1C7555B700246809 /* RegisterViewController.m */; };
+		45176B221C7555B700246809 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45176B201C7555B700246809 /* RegisterViewController.xib */; };
+		45176B281C755C4800246809 /* GTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B271C755C4800246809 /* GTabBarController.m */; };
+		45176B2C1C7574D300246809 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B2A1C7574D300246809 /* ListViewController.m */; };
+		45176B2D1C7574D300246809 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45176B2B1C7574D300246809 /* ListViewController.xib */; };
+		45176B311C7574E900246809 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B2F1C7574E900246809 /* MyViewController.m */; };
+		45176B321C7574E900246809 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45176B301C7574E900246809 /* MyViewController.xib */; };
+		45176B371C75756100246809 /* UIImage+GImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B361C75756100246809 /* UIImage+GImage.m */; };
+		45176B3A1C75764D00246809 /* GTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B391C75764D00246809 /* GTabBar.m */; };
+		45176B3D1C75C53300246809 /* GNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176B3C1C75C53300246809 /* GNavgationController.m */; };
+		45176B481C75E16400246809 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B471C75E16400246809 /* libz.tbd */; };
+		45176B4A1C75E16E00246809 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B491C75E16E00246809 /* libicucore.tbd */; };
+		45176B4C1C75E17C00246809 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B4B1C75E17C00246809 /* MessageUI.framework */; };
+		45176B501C75E19B00246809 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B4F1C75E19B00246809 /* libstdc++.tbd */; };
+		45176B591C75E76000246809 /* SMS_SDK in Resources */ = {isa = PBXBuildFile; fileRef = 45176B581C75E76000246809 /* SMS_SDK */; };
+		45176B5D1C75F01100246809 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B5C1C75F01100246809 /* JavaScriptCore.framework */; };
+		45176B991C75F3B700246809 /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45176B941C75F3B700246809 /* SMS_SDKLocalizable.strings */; };
+		45176B9A1C75F3B700246809 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B961C75F3B700246809 /* MOBFoundation.framework */; };
+		45176B9B1C75F3B700246809 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B971C75F3B700246809 /* SMS_SDK.framework */; };
+		45176B9D1C75F71100246809 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B9C1C75F71100246809 /* CoreLocation.framework */; };
+		45176B9F1C75F71A00246809 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176B9E1C75F71A00246809 /* Security.framework */; };
+		45176BA11C75F72400246809 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BA01C75F72400246809 /* CoreGraphics.framework */; };
+		45176BA31C75F72E00246809 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BA21C75F72E00246809 /* MobileCoreServices.framework */; };
+		45176BA51C75F73600246809 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BA41C75F73600246809 /* CFNetwork.framework */; };
+		45176BA71C75F74300246809 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BA61C75F74300246809 /* CoreTelephony.framework */; };
+		45176BA91C75F74E00246809 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BA81C75F74E00246809 /* SystemConfiguration.framework */; };
+		45176BAB1C75F75B00246809 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BAA1C75F75B00246809 /* libz.1.2.5.tbd */; };
+		45176BAD1C75F76C00246809 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BAC1C75F76C00246809 /* libsqlite3.tbd */; };
+		45176BAF1C75F77400246809 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BAE1C75F77400246809 /* AVFoundation.framework */; };
+		45176BB11C75F77E00246809 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BB01C75F77E00246809 /* MediaPlayer.framework */; };
+		45176BB31C75F78D00246809 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45176BB21C75F78D00246809 /* BmobSDK.framework */; };
+		45176BE71C7990A400246809 /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176BE51C7990A400246809 /* AddNewViewController.m */; };
+		45176BE81C7990A400246809 /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45176BE61C7990A400246809 /* AddNewViewController.xib */; };
+		45176BEB1C79EC6800246809 /* GTFAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176BEA1C79EC6800246809 /* GTFAccessoryView.m */; };
+		45176BED1C79EC9F00246809 /* GTFAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45176BEC1C79EC9F00246809 /* GTFAccessoryView.xib */; };
+		45176BF11C7B38FA00246809 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176BF01C7B38FA00246809 /* DataBase.m */; };
+		45176BF71C7B522000246809 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 45176BF61C7B522000246809 /* Events.m */; };
+		455733611C59C50300C0D76E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 455733601C59C50300C0D76E /* main.m */; };
+		455733641C59C50300C0D76E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 455733631C59C50300C0D76E /* AppDelegate.m */; };
+		455733671C59C50300C0D76E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455733661C59C50300C0D76E /* ViewController.m */; };
+		4557336A1C59C50300C0D76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 455733681C59C50300C0D76E /* Main.storyboard */; };
+		4557336C1C59C50300C0D76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4557336B1C59C50300C0D76E /* Assets.xcassets */; };
+		4557336F1C59C50300C0D76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4557336D1C59C50300C0D76E /* LaunchScreen.storyboard */; };
+		4557337E1C59C9EA00C0D76E /* GGuideVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4557337D1C59C9EA00C0D76E /* GGuideVIewController.m */; };
+		455733811C59E31200C0D76E /* GGuideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 455733801C59E31200C0D76E /* GGuideViewCell.m */; };
+		4557338C1C59FEBA00C0D76E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4557338A1C59FEBA00C0D76E /* LoginViewController.m */; };
+		4557338D1C59FEBA00C0D76E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4557338B1C59FEBA00C0D76E /* LoginViewController.xib */; };
+		ED5321DEB747AE4CB6151C88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1894A963FAB8B6F8581B7468 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		45176B1E1C7555B700246809 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		45176B1F1C7555B700246809 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		45176B201C7555B700246809 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		45176B261C755C4800246809 /* GTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTabBarController.h; sourceTree = "<group>"; };
+		45176B271C755C4800246809 /* GTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTabBarController.m; sourceTree = "<group>"; };
+		45176B291C7574D300246809 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		45176B2A1C7574D300246809 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		45176B2B1C7574D300246809 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		45176B2E1C7574E900246809 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		45176B2F1C7574E900246809 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		45176B301C7574E900246809 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		45176B351C75756100246809 /* UIImage+GImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GImage.h"; sourceTree = "<group>"; };
+		45176B361C75756100246809 /* UIImage+GImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GImage.m"; sourceTree = "<group>"; };
+		45176B381C75764D00246809 /* GTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTabBar.h; sourceTree = "<group>"; };
+		45176B391C75764D00246809 /* GTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTabBar.m; sourceTree = "<group>"; };
+		45176B3B1C75C53300246809 /* GNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNavgationController.h; sourceTree = "<group>"; };
+		45176B3C1C75C53300246809 /* GNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNavgationController.m; sourceTree = "<group>"; };
+		45176B471C75E16400246809 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		45176B491C75E16E00246809 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		45176B4B1C75E17C00246809 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		45176B4F1C75E19B00246809 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		45176B581C75E76000246809 /* SMS_SDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SMS_SDK; path = "/Users/stundent/Desktop/我的项目/TheDays副本/TheDays/SMS_SDK"; sourceTree = "<absolute>"; };
+		45176B5C1C75F01100246809 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		45176B5F1C75F0EF00246809 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SMS_SDK.framework; path = TheDays/SMS_SDK/SMS_SDK.framework; sourceTree = "<group>"; };
+		45176B951C75F3B700246809 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		45176B961C75F3B700246809 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		45176B971C75F3B700246809 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		45176B981C75F3B700246809 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
+		45176B9C1C75F71100246809 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45176B9E1C75F71A00246809 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		45176BA01C75F72400246809 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		45176BA21C75F72E00246809 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		45176BA41C75F73600246809 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		45176BA61C75F74300246809 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		45176BA81C75F74E00246809 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		45176BAA1C75F75B00246809 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		45176BAC1C75F76C00246809 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		45176BAE1C75F77400246809 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45176BB01C75F77E00246809 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		45176BB21C75F78D00246809 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		45176BE41C7990A400246809 /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
+		45176BE51C7990A400246809 /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
+		45176BE61C7990A400246809 /* AddNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
+		45176BE91C79EC6800246809 /* GTFAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFAccessoryView.h; sourceTree = "<group>"; };
+		45176BEA1C79EC6800246809 /* GTFAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFAccessoryView.m; sourceTree = "<group>"; };
+		45176BEC1C79EC9F00246809 /* GTFAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTFAccessoryView.xib; sourceTree = "<group>"; };
+		45176BEF1C7B38FA00246809 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		45176BF01C7B38FA00246809 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		45176BF51C7B522000246809 /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		45176BF61C7B522000246809 /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		4557335C1C59C50300C0D76E /* TheDays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		455733601C59C50300C0D76E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		455733621C59C50300C0D76E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		455733631C59C50300C0D76E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		455733651C59C50300C0D76E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		455733661C59C50300C0D76E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		455733691C59C50300C0D76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4557336B1C59C50300C0D76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4557336E1C59C50300C0D76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		455733701C59C50300C0D76E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		455733781C59C77200C0D76E /* DayPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayPrefixHeader.pch; sourceTree = "<group>"; };
+		4557337C1C59C9EA00C0D76E /* GGuideVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGuideVIewController.h; sourceTree = "<group>"; };
+		4557337D1C59C9EA00C0D76E /* GGuideVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGuideVIewController.m; sourceTree = "<group>"; };
+		4557337F1C59E31200C0D76E /* GGuideViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGuideViewCell.h; sourceTree = "<group>"; };
+		455733801C59E31200C0D76E /* GGuideViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGuideViewCell.m; sourceTree = "<group>"; };
+		455733891C59FEBA00C0D76E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4557338A1C59FEBA00C0D76E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4557338B1C59FEBA00C0D76E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		859A47776E1A61FBD837CE6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		455733591C59C50300C0D76E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45176BB11C75F77E00246809 /* MediaPlayer.framework in Frameworks */,
+				45176BAF1C75F77400246809 /* AVFoundation.framework in Frameworks */,
+				45176BAD1C75F76C00246809 /* libsqlite3.tbd in Frameworks */,
+				45176BAB1C75F75B00246809 /* libz.1.2.5.tbd in Frameworks */,
+				45176BA91C75F74E00246809 /* SystemConfiguration.framework in Frameworks */,
+				45176BA71C75F74300246809 /* CoreTelephony.framework in Frameworks */,
+				45176BA51C75F73600246809 /* CFNetwork.framework in Frameworks */,
+				45176BA31C75F72E00246809 /* MobileCoreServices.framework in Frameworks */,
+				45176BA11C75F72400246809 /* CoreGraphics.framework in Frameworks */,
+				45176B9F1C75F71A00246809 /* Security.framework in Frameworks */,
+				45176B9D1C75F71100246809 /* CoreLocation.framework in Frameworks */,
+				45176B5D1C75F01100246809 /* JavaScriptCore.framework in Frameworks */,
+				45176B9B1C75F3B700246809 /* SMS_SDK.framework in Frameworks */,
+				45176B501C75E19B00246809 /* libstdc++.tbd in Frameworks */,
+				45176B4C1C75E17C00246809 /* MessageUI.framework in Frameworks */,
+				45176B4A1C75E16E00246809 /* libicucore.tbd in Frameworks */,
+				45176B481C75E16400246809 /* libz.tbd in Frameworks */,
+				ED5321DEB747AE4CB6151C88 /* libPods.a in Frameworks */,
+				45176B9A1C75F3B700246809 /* MOBFoundation.framework in Frameworks */,
+				45176BB31C75F78D00246809 /* BmobSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45176B231C755BB400246809 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				45176BEE1C7B387700246809 /* Model */,
+				45176B251C755BF300246809 /* Controller */,
+				45176B241C755BEB00246809 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		45176B241C755BEB00246809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45176B381C75764D00246809 /* GTabBar.h */,
+				45176B391C75764D00246809 /* GTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45176B251C755BF300246809 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45176B261C755C4800246809 /* GTabBarController.h */,
+				45176B271C755C4800246809 /* GTabBarController.m */,
+				45176B3B1C75C53300246809 /* GNavgationController.h */,
+				45176B3C1C75C53300246809 /* GNavgationController.m */,
+				45176BE41C7990A400246809 /* AddNewViewController.h */,
+				45176BE51C7990A400246809 /* AddNewViewController.m */,
+				45176BE61C7990A400246809 /* AddNewViewController.xib */,
+				45176BE91C79EC6800246809 /* GTFAccessoryView.h */,
+				45176BEA1C79EC6800246809 /* GTFAccessoryView.m */,
+				45176BEC1C79EC9F00246809 /* GTFAccessoryView.xib */,
+				45176B291C7574D300246809 /* ListViewController.h */,
+				45176B2A1C7574D300246809 /* ListViewController.m */,
+				45176B2B1C7574D300246809 /* ListViewController.xib */,
+				45176B2E1C7574E900246809 /* MyViewController.h */,
+				45176B2F1C7574E900246809 /* MyViewController.m */,
+				45176B301C7574E900246809 /* MyViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		45176B331C75751000246809 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				45176B341C75752A00246809 /* Category */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		45176B341C75752A00246809 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				45176B351C75756100246809 /* UIImage+GImage.h */,
+				45176B361C75756100246809 /* UIImage+GImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		45176B3E1C75E0B400246809 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				45176B4F1C75E19B00246809 /* libstdc++.tbd */,
+				45176B4B1C75E17C00246809 /* MessageUI.framework */,
+				45176B491C75E16E00246809 /* libicucore.tbd */,
+				45176B471C75E16400246809 /* libz.tbd */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		45176B931C75F3B700246809 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				45176B941C75F3B700246809 /* SMS_SDKLocalizable.strings */,
+				45176B961C75F3B700246809 /* MOBFoundation.framework */,
+				45176B971C75F3B700246809 /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
+		45176BEE1C7B387700246809 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45176BEF1C7B38FA00246809 /* DataBase.h */,
+				45176BF01C7B38FA00246809 /* DataBase.m */,
+				45176BF51C7B522000246809 /* Events.h */,
+				45176BF61C7B522000246809 /* Events.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		455733531C59C50300C0D76E = {
+			isa = PBXGroup;
+			children = (
+				4557335E1C59C50300C0D76E /* TheDays */,
+				4557335D1C59C50300C0D76E /* Products */,
+				58847C6F5EF7FBED925D8F17 /* Pods */,
+				DA2A6658FFFF0800D9DBB99C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4557335D1C59C50300C0D76E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4557335C1C59C50300C0D76E /* TheDays.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4557335E1C59C50300C0D76E /* TheDays */ = {
+			isa = PBXGroup;
+			children = (
+				45176BB21C75F78D00246809 /* BmobSDK.framework */,
+				45176B931C75F3B700246809 /* SMS_SDK */,
+				45176B3E1C75E0B400246809 /* SDK */,
+				45176B331C75751000246809 /* Expand */,
+				45176B231C755BB400246809 /* Main */,
+				455733821C59E8AA00C0D76E /* LoginAndRegister */,
+				455733791C59C93F00C0D76E /* Guide */,
+				455733771C59C62C00C0D76E /* Config */,
+				455733621C59C50300C0D76E /* AppDelegate.h */,
+				455733631C59C50300C0D76E /* AppDelegate.m */,
+				455733651C59C50300C0D76E /* ViewController.h */,
+				455733661C59C50300C0D76E /* ViewController.m */,
+				455733681C59C50300C0D76E /* Main.storyboard */,
+				4557336B1C59C50300C0D76E /* Assets.xcassets */,
+				4557336D1C59C50300C0D76E /* LaunchScreen.storyboard */,
+				455733701C59C50300C0D76E /* Info.plist */,
+				4557335F1C59C50300C0D76E /* Supporting Files */,
+			);
+			path = TheDays;
+			sourceTree = "<group>";
+		};
+		4557335F1C59C50300C0D76E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				455733601C59C50300C0D76E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		455733771C59C62C00C0D76E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				455733781C59C77200C0D76E /* DayPrefixHeader.pch */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		455733791C59C93F00C0D76E /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				4557337B1C59C99B00C0D76E /* Controller */,
+				4557337A1C59C96E00C0D76E /* View */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		4557337A1C59C96E00C0D76E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4557337F1C59E31200C0D76E /* GGuideViewCell.h */,
+				455733801C59E31200C0D76E /* GGuideViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4557337B1C59C99B00C0D76E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4557337C1C59C9EA00C0D76E /* GGuideVIewController.h */,
+				4557337D1C59C9EA00C0D76E /* GGuideVIewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		455733821C59E8AA00C0D76E /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				455733831C59EB6200C0D76E /* Controller */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		455733831C59EB6200C0D76E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				455733891C59FEBA00C0D76E /* LoginViewController.h */,
+				4557338A1C59FEBA00C0D76E /* LoginViewController.m */,
+				4557338B1C59FEBA00C0D76E /* LoginViewController.xib */,
+				45176B1E1C7555B700246809 /* RegisterViewController.h */,
+				45176B1F1C7555B700246809 /* RegisterViewController.m */,
+				45176B201C7555B700246809 /* RegisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		58847C6F5EF7FBED925D8F17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				859A47776E1A61FBD837CE6B /* Pods.debug.xcconfig */,
+				1894A963FAB8B6F8581B7468 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA2A6658FFFF0800D9DBB99C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45176BB01C75F77E00246809 /* MediaPlayer.framework */,
+				45176BAE1C75F77400246809 /* AVFoundation.framework */,
+				45176BAC1C75F76C00246809 /* libsqlite3.tbd */,
+				45176BAA1C75F75B00246809 /* libz.1.2.5.tbd */,
+				45176BA81C75F74E00246809 /* SystemConfiguration.framework */,
+				45176BA61C75F74300246809 /* CoreTelephony.framework */,
+				45176BA41C75F73600246809 /* CFNetwork.framework */,
+				45176BA21C75F72E00246809 /* MobileCoreServices.framework */,
+				45176BA01C75F72400246809 /* CoreGraphics.framework */,
+				45176B9E1C75F71A00246809 /* Security.framework */,
+				45176B9C1C75F71100246809 /* CoreLocation.framework */,
+				45176B5F1C75F0EF00246809 /* SMS_SDK.framework */,
+				45176B5C1C75F01100246809 /* JavaScriptCore.framework */,
+				BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4557335B1C59C50300C0D76E /* TheDays */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 455733731C59C50300C0D76E /* Build configuration list for PBXNativeTarget "TheDays" */;
+			buildPhases = (
+				3C8FAB3713BB53ED385E4563 /* Check Pods Manifest.lock */,
+				455733581C59C50300C0D76E /* Sources */,
+				455733591C59C50300C0D76E /* Frameworks */,
+				4557335A1C59C50300C0D76E /* Resources */,
+				0418582872E61229BD2071F6 /* Embed Pods Frameworks */,
+				4198761F85B751D8B8225ABC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheDays;
+			productName = TheDays;
+			productReference = 4557335C1C59C50300C0D76E /* TheDays.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		455733541C59C50300C0D76E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = student;
+				TargetAttributes = {
+					4557335B1C59C50300C0D76E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K6E27TA937;
+					};
+				};
+			};
+			buildConfigurationList = 455733571C59C50300C0D76E /* Build configuration list for PBXProject "TheDays" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 455733531C59C50300C0D76E;
+			productRefGroup = 4557335D1C59C50300C0D76E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4557335B1C59C50300C0D76E /* TheDays */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4557335A1C59C50300C0D76E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45176B321C7574E900246809 /* MyViewController.xib in Resources */,
+				4557338D1C59FEBA00C0D76E /* LoginViewController.xib in Resources */,
+				45176B221C7555B700246809 /* RegisterViewController.xib in Resources */,
+				45176B591C75E76000246809 /* SMS_SDK in Resources */,
+				45176B2D1C7574D300246809 /* ListViewController.xib in Resources */,
+				4557336F1C59C50300C0D76E /* LaunchScreen.storyboard in Resources */,
+				4557336C1C59C50300C0D76E /* Assets.xcassets in Resources */,
+				45176BED1C79EC9F00246809 /* GTFAccessoryView.xib in Resources */,
+				45176B991C75F3B700246809 /* SMS_SDKLocalizable.strings in Resources */,
+				45176BE81C7990A400246809 /* AddNewViewController.xib in Resources */,
+				4557336A1C59C50300C0D76E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0418582872E61229BD2071F6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C8FAB3713BB53ED385E4563 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4198761F85B751D8B8225ABC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		455733581C59C50300C0D76E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45176BE71C7990A400246809 /* AddNewViewController.m in Sources */,
+				45176B3D1C75C53300246809 /* GNavgationController.m in Sources */,
+				455733811C59E31200C0D76E /* GGuideViewCell.m in Sources */,
+				45176B371C75756100246809 /* UIImage+GImage.m in Sources */,
+				455733671C59C50300C0D76E /* ViewController.m in Sources */,
+				45176BF71C7B522000246809 /* Events.m in Sources */,
+				45176B2C1C7574D300246809 /* ListViewController.m in Sources */,
+				4557338C1C59FEBA00C0D76E /* LoginViewController.m in Sources */,
+				45176B311C7574E900246809 /* MyViewController.m in Sources */,
+				45176BEB1C79EC6800246809 /* GTFAccessoryView.m in Sources */,
+				4557337E1C59C9EA00C0D76E /* GGuideVIewController.m in Sources */,
+				45176BF11C7B38FA00246809 /* DataBase.m in Sources */,
+				45176B211C7555B700246809 /* RegisterViewController.m in Sources */,
+				45176B281C755C4800246809 /* GTabBarController.m in Sources */,
+				455733641C59C50300C0D76E /* AppDelegate.m in Sources */,
+				455733611C59C50300C0D76E /* main.m in Sources */,
+				45176B3A1C75764D00246809 /* GTabBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		45176B941C75F3B700246809 /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45176B951C75F3B700246809 /* en */,
+				45176B981C75F3B700246809 /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
+		455733681C59C50300C0D76E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				455733691C59C50300C0D76E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4557336D1C59C50300C0D76E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4557336E1C59C50300C0D76E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		455733711C59C50300C0D76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		455733721C59C50300C0D76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		455733741C59C50300C0D76E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 859A47776E1A61FBD837CE6B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/TheDays/SMS_SDK",
+					"$(PROJECT_DIR)/TheDays",
+				);
+				GCC_PREFIX_HEADER = TheDays/Config/DayPrefixHeader.pch;
+				INFOPLIST_FILE = TheDays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudent.hero.TheDays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		455733751C59C50300C0D76E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1894A963FAB8B6F8581B7468 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(PROJECT_DIR)/TheDays/SMS_SDK",
+					"$(PROJECT_DIR)/TheDays",
+				);
+				GCC_PREFIX_HEADER = TheDays/Config/DayPrefixHeader.pch;
+				INFOPLIST_FILE = TheDays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudent.hero.TheDays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		455733571C59C50300C0D76E /* Build configuration list for PBXProject "TheDays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455733711C59C50300C0D76E /* Debug */,
+				455733721C59C50300C0D76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		455733731C59C50300C0D76E /* Build configuration list for PBXNativeTarget "TheDays" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				455733741C59C50300C0D76E /* Debug */,
+				455733751C59C50300C0D76E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 455733541C59C50300C0D76E /* Project object */;
+}
