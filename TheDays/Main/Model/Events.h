@@ -15,8 +15,11 @@
 @property (nonatomic, copy) NSString *date;
 @property (nonatomic, copy) NSString *classify;
 @property (nonatomic, copy) NSString *imageNum;
+@property (nonatomic, copy) NSString *createDate;
+@property (nonatomic, assign) int setCover;
+@property (nonatomic, assign) int findTag;
 
-+ (instancetype)eventWithuId:(int)uId andPhoneNum:(NSString *)phoneNum andTitle:(NSString *)title andDate:(NSString *)date andClassify:(NSString *)classify andImageNum:(NSString *)imageNum;
++ (instancetype)eventWithuId:(int)uId andPhoneNum:(NSString *)phoneNum andTitle:(NSString *)title andDate:(NSString *)date andClassify:(NSString *)classify andImageNum:(NSString *)imageNum andCreateDate:(NSString *)createDate andSetCover:(int)setCover andFindTag:(int)findTag;
 - (NSMutableArray *)loadDataFromDB;
 
 + (BOOL)insertEvent:(Events *)event;

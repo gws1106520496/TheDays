@@ -54,6 +54,10 @@
 		455733811C59E31200C0D76E /* GGuideViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 455733801C59E31200C0D76E /* GGuideViewCell.m */; };
 		4557338C1C59FEBA00C0D76E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4557338A1C59FEBA00C0D76E /* LoginViewController.m */; };
 		4557338D1C59FEBA00C0D76E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4557338B1C59FEBA00C0D76E /* LoginViewController.xib */; };
+		45E57D611C7DDA55000ADB34 /* EventScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E57D5F1C7DDA55000ADB34 /* EventScrollerViewController.m */; };
+		45E57D621C7DDA55000ADB34 /* EventScrollerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E57D601C7DDA55000ADB34 /* EventScrollerViewController.xib */; };
+		45E57D661C7EFECF000ADB34 /* GTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E57D641C7EFECF000ADB34 /* GTableViewCell.m */; };
+		45E57D671C7EFECF000ADB34 /* GTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E57D651C7EFECF000ADB34 /* GTableViewCell.xib */; };
 		ED5321DEB747AE4CB6151C88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +131,12 @@
 		455733891C59FEBA00C0D76E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4557338A1C59FEBA00C0D76E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		4557338B1C59FEBA00C0D76E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		45E57D5E1C7DDA55000ADB34 /* EventScrollerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventScrollerViewController.h; sourceTree = "<group>"; };
+		45E57D5F1C7DDA55000ADB34 /* EventScrollerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventScrollerViewController.m; sourceTree = "<group>"; };
+		45E57D601C7DDA55000ADB34 /* EventScrollerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventScrollerViewController.xib; sourceTree = "<group>"; };
+		45E57D631C7EFECF000ADB34 /* GTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTableViewCell.h; sourceTree = "<group>"; };
+		45E57D641C7EFECF000ADB34 /* GTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTableViewCell.m; sourceTree = "<group>"; };
+		45E57D651C7EFECF000ADB34 /* GTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTableViewCell.xib; sourceTree = "<group>"; };
 		859A47776E1A61FBD837CE6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +207,12 @@
 				45176B291C7574D300246809 /* ListViewController.h */,
 				45176B2A1C7574D300246809 /* ListViewController.m */,
 				45176B2B1C7574D300246809 /* ListViewController.xib */,
+				45E57D631C7EFECF000ADB34 /* GTableViewCell.h */,
+				45E57D641C7EFECF000ADB34 /* GTableViewCell.m */,
+				45E57D651C7EFECF000ADB34 /* GTableViewCell.xib */,
+				45E57D5E1C7DDA55000ADB34 /* EventScrollerViewController.h */,
+				45E57D5F1C7DDA55000ADB34 /* EventScrollerViewController.m */,
+				45E57D601C7DDA55000ADB34 /* EventScrollerViewController.xib */,
 				45176B2E1C7574E900246809 /* MyViewController.h */,
 				45176B2F1C7574E900246809 /* MyViewController.m */,
 				45176B301C7574E900246809 /* MyViewController.xib */,
@@ -460,8 +476,10 @@
 				4557336C1C59C50300C0D76E /* Assets.xcassets in Resources */,
 				45176BED1C79EC9F00246809 /* GTFAccessoryView.xib in Resources */,
 				45176B991C75F3B700246809 /* SMS_SDKLocalizable.strings in Resources */,
+				45E57D671C7EFECF000ADB34 /* GTableViewCell.xib in Resources */,
 				45176BE81C7990A400246809 /* AddNewViewController.xib in Resources */,
 				4557336A1C59C50300C0D76E /* Main.storyboard in Resources */,
+				45E57D621C7DDA55000ADB34 /* EventScrollerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +542,7 @@
 				45176B3D1C75C53300246809 /* GNavgationController.m in Sources */,
 				455733811C59E31200C0D76E /* GGuideViewCell.m in Sources */,
 				45176B371C75756100246809 /* UIImage+GImage.m in Sources */,
+				45E57D661C7EFECF000ADB34 /* GTableViewCell.m in Sources */,
 				455733671C59C50300C0D76E /* ViewController.m in Sources */,
 				45176BF71C7B522000246809 /* Events.m in Sources */,
 				45176B2C1C7574D300246809 /* ListViewController.m in Sources */,
@@ -535,6 +554,7 @@
 				45176B211C7555B700246809 /* RegisterViewController.m in Sources */,
 				45176B281C755C4800246809 /* GTabBarController.m in Sources */,
 				455733641C59C50300C0D76E /* AppDelegate.m in Sources */,
+				45E57D611C7DDA55000ADB34 /* EventScrollerViewController.m in Sources */,
 				455733611C59C50300C0D76E /* main.m in Sources */,
 				45176B3A1C75764D00246809 /* GTabBar.m in Sources */,
 			);

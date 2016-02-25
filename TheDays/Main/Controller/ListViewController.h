@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "Events.h"
+@protocol SetUpUIDelegate <NSObject>
 
+- (void)SetUpUI:(NSDictionary *)dataDic;
+
+@end
 @interface ListViewController : UIViewController
-
+@property (nonatomic, weak) id<SetUpUIDelegate>gSetUpUIDelegate;
 @end

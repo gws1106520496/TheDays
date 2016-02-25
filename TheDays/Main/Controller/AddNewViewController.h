@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Events;
 @interface AddNewViewController : UIViewController
-@property (nonatomic, strong)NSDictionary *dic;
+@property (nonatomic, strong) NSDictionary *dic;
+@property (nonatomic, strong) Events *eventEdit;
+@property (nonatomic, assign) BOOL modify;
 @end

@@ -15,6 +15,7 @@
 #import "AddNewViewController.h"
 @interface GTabBarController ()<UITabBarControllerDelegate,GTabBarDelegate>
 {
+    GTabBar *GtabBar;
     UIViewController *listVC;
     UIViewController *myVC;
     int currentTabIndex;
@@ -44,7 +45,7 @@
     currentTabIndex = 0;
     Tag = 0;
     //更改GTabBarController(self).tabBar 变成自定义的tabBar
-    GTabBar *GtabBar = [[GTabBar alloc]init];
+    GtabBar = [[GTabBar alloc]init];
     GtabBar.gDelegate = self;
     //KVC赋值， 修改只读属性
     [self setValue:GtabBar forKey:@"tabBar"];
@@ -70,6 +71,8 @@
 {
     [super viewWillAppear:animated];
     chooseView.hidden = YES;
+    GtabBar.addButton.selected = NO;
+    
 }
 - (void)didSelectedAddButton:(GTabBar *)tabBar
 {
