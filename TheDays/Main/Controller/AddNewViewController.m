@@ -29,81 +29,68 @@
 - (IBAction)addDownAction:(id)sender;
 - (IBAction)deleteAction:(id)sender;
 
-@property (nonatomic, strong) NSString *toDate;
+@property (nonatomic, copy) NSString *toDate;
 @property (nonatomic, strong) NSArray *labelArray;
+@property (nonatomic, copy) NSString *modifyDate;
 @end
 
 @implementation AddNewViewController
 
 - (IBAction)addCancelAction:(id)sender {
+    if (self.modify) {
+        [self.navigationController popViewControllerAnimated:YES];
+         self.modify = NO;
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
     
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)addDownAction:(id)sender {
-    if ([self.titleTF.text isEqualToString:@""]) {
-        [self.view makeToast:@"请输入biaoti" duration:2.0 position:showPosition];
+    if (self.modify) {
+        //修改数据库中的event
+        Events *newEvent = [Events eventWithuId:0 andPhoneNum:self.eventEdit.phoneNum andTitle:self.titleTF.text andDate:[Utils getDistanceDayStr:[NSString stringWithFormat:@"%@",datePicker.date]] andClassify:self.classifyTF.text andImageNum:self.dic[@"imageNum"] andCreateDate:self.eventEdit.createDate andSetCover:self.eventEdit.setCover andFindTag:self.eventEdit.findTag];
+        [Events editEvent:newEvent];
+        [self.navigationController popViewControllerAnimated:YES];
     }else{
-             //保存到数据库
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSString *phone = [defaults objectForKey:@"phoneNum"];
-        
-        long dd;
-        NSString *timeString = @"";
-        NSDate *nowDate = [NSDate date];
-        
-        NSDate *addDate = [formatter dateFromString:self.dateTF.text];
-        NSString *dayStr;
-        if ([nowDate timeIntervalSince1970] > [addDate timeIntervalSince1970]) {
-            dd = (long)[nowDate timeIntervalSince1970] - [addDate timeIntervalSince1970];
-            before = YES;
+        if ([self.titleTF.text isEqualToString:@""]) {
+            [self.view makeToast:@"请输入biaoti" duration:2.0 position:showPosition];
         }else{
-            dd = (long)[addDate timeIntervalSince1970] - [nowDate timeIntervalSince1970];
-            before = NO;
-        }
-        
-        if (dd/86400>1)
-        {
-            timeString = [NSString stringWithFormat:@"%ld",dd/86400];
-            if (before) {
-                dayStr = [NSString stringWithFormat:@"+%@",timeString];
-            }else{
-                dayStr = [NSString stringWithFormat:@"-%@",timeString];
-            }
+            //保存到数据库
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            NSString *phone = [defaults objectForKey:@"phoneNum"];
             
-        }else{
-            dayStr = @"0";
-        }
-        int cover;
-        if (self.setCover.isOn) {
-            cover = 1;
-        }else{
-            cover = 0;
-        }
-        NSDateFormatter *onceFormatter = [[NSDateFormatter alloc]init];
-        [onceFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-//        NSTimeZone *timeZone = [NSTimeZone localTimeZone];
-//        [onceFormatter setTimeZone:timeZone];
-        NSString *someDayStr = @"2000-01-01 00:00:00";//过去的某个时间点
-        NSDate *someDayDate = [onceFormatter dateFromString:someDayStr];
-        NSDate *compareDate = [onceFormatter dateFromString:self.toDate];
-        NSTimeInterval time = [compareDate timeIntervalSinceDate:someDayDate];
-        Events *event = [Events eventWithuId:0 andPhoneNum:phone andTitle:self.titleTF.text andDate:dayStr andClassify:self.classifyTF.text andImageNum:self.dic[@"imageNum"] andCreateDate:self.dateTF.text andSetCover:cover andFindTag:time];
-        BOOL result = [Events insertEvent:event];
-        if (result) {
+            int cover;
             if (self.setCover.isOn) {
-            //通知ListViewController 设为封面
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"setCover" object:event userInfo:nil];
-                
+                cover = 1;
+            }else{
+                cover = 0;
             }
-            self.modify = NO;
-            [self dismissViewControllerAnimated:YES completion:nil];
+            NSDateFormatter *onceFormatter = [[NSDateFormatter alloc]init];
+            [onceFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+            //        NSTimeZone *timeZone = [NSTimeZone localTimeZone];
+            //        [onceFormatter setTimeZone:timeZone];
+            NSString *someDayStr = @"2000-01-01 00:00:00";//过去的某个时间点
+            NSDate *someDayDate = [onceFormatter dateFromString:someDayStr];
+            NSDate *compareDate = [onceFormatter dateFromString:self.toDate];
+            NSTimeInterval flagTime = [compareDate timeIntervalSinceDate:someDayDate];
+            Events *event = [Events eventWithuId:0 andPhoneNum:phone andTitle:self.titleTF.text andDate:[Utils getDistanceDayStr:[NSString stringWithFormat:@"%@",datePicker.date]] andClassify:self.classifyTF.text andImageNum:self.dic[@"imageNum"] andCreateDate:[NSString stringWithFormat:@"%@",datePicker.date] andSetCover:cover andFindTag:flagTime];
+            BOOL insertResult = [Events insertEvent:event];
+            if (insertResult) {
+                if (self.setCover.isOn) {
+                    //通知ListViewController 设为封面
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"setCover" object:event userInfo:nil];
+                    
+                }
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
         }
     }
     
 }
 
 - (IBAction)deleteAction:(id)sender {
+    [Events deleteEventWIthUId:self.eventEdit.findTag];
 }
 
 -(NSArray *)labelArray
@@ -131,7 +118,7 @@
     //设置时区
     [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"]];
     formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
+    [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     [datePicker setDate:[NSDate date] animated:YES];//设置默认时间为当前时间
 
     //mode属性
@@ -144,12 +131,13 @@
     self.toDate = [[NSString stringWithFormat:@"%@",[NSDate date]] substringToIndex:19];
     if (self.modify) {
         self.deleteBtn.hidden = NO;
+        self.modifyDate = self.eventEdit.createDate;
     }else{
         self.deleteBtn.hidden = YES;
     }
 //    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
 //    NSLog(@"%@",path);
-   
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -169,6 +157,10 @@
     self.toDate = [[NSString stringWithFormat:@"%@",[NSDate date]] substringToIndex:19];
     date = [NSString stringWithFormat:@"%@",datePicker.date];
     self.dateTF.text = [date substringToIndex:10];
+    if (self.modify) {
+        self.modifyDate = date;
+        self.eventEdit.createDate = [NSString stringWithFormat:@"%@",datePicker.date];
+    }
 }
 
 #pragma mark  UIPickerViewDataSource
@@ -197,13 +189,13 @@
 }
 - (void)checkNil
 {
-    if(self.dic){
+    if(self.dic && !self.modify){
         self.classifyTF.text = self.dic[@"eventLabel"];
         [timer invalidate];
     }else if (self.modify){
         self.classifyTF.text = self.eventEdit.classify;
         self.titleTF.text = self.eventEdit.title;
-        self.dateTF.text = self.eventEdit.createDate;
+        self.dateTF.text = [self.eventEdit.createDate substringToIndex:10];
         if (self.eventEdit.setCover == 1) {
             [self.setCover setOn:YES animated:YES];
         }else{

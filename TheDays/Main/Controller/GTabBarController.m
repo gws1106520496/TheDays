@@ -128,7 +128,7 @@
     
     [self initChildViewController:listVC title:nil unSelectedImageName:@"shouyeUn" selectedImageName:@"shouye"];
     
-    myVC = [[UIViewController alloc]init];
+    myVC = [[MyViewController alloc]init];
     [self initChildViewController:myVC title:@"设置" unSelectedImageName:@"wodeUn" selectedImageName:@"wode"];
     NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     NSLog(@"%@",path);

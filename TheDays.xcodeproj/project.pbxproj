@@ -58,6 +58,7 @@
 		45E57D621C7DDA55000ADB34 /* EventScrollerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E57D601C7DDA55000ADB34 /* EventScrollerViewController.xib */; };
 		45E57D661C7EFECF000ADB34 /* GTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E57D641C7EFECF000ADB34 /* GTableViewCell.m */; };
 		45E57D671C7EFECF000ADB34 /* GTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E57D651C7EFECF000ADB34 /* GTableViewCell.xib */; };
+		45E57D6B1C7FF3C8000ADB34 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E57D6A1C7FF3C8000ADB34 /* Utils.m */; };
 		ED5321DEB747AE4CB6151C88 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,8 @@
 		45E57D631C7EFECF000ADB34 /* GTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTableViewCell.h; sourceTree = "<group>"; };
 		45E57D641C7EFECF000ADB34 /* GTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTableViewCell.m; sourceTree = "<group>"; };
 		45E57D651C7EFECF000ADB34 /* GTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTableViewCell.xib; sourceTree = "<group>"; };
+		45E57D691C7FF3C8000ADB34 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		45E57D6A1C7FF3C8000ADB34 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		859A47776E1A61FBD837CE6B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BFFE1FBB0A2AF5C2A3178B63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +178,7 @@
 		45176B231C755BB400246809 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				45E57D681C7FF38E000ADB34 /* 工具 */,
 				45176BEE1C7B387700246809 /* Model */,
 				45176B251C755BF300246809 /* Controller */,
 				45176B241C755BEB00246809 /* View */,
@@ -375,6 +379,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		45E57D681C7FF38E000ADB34 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				45E57D691C7FF3C8000ADB34 /* Utils.h */,
+				45E57D6A1C7FF3C8000ADB34 /* Utils.m */,
+			);
+			name = "工具";
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		58847C6F5EF7FBED925D8F17 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +555,7 @@
 				45176BE71C7990A400246809 /* AddNewViewController.m in Sources */,
 				45176B3D1C75C53300246809 /* GNavgationController.m in Sources */,
 				455733811C59E31200C0D76E /* GGuideViewCell.m in Sources */,
+				45E57D6B1C7FF3C8000ADB34 /* Utils.m in Sources */,
 				45176B371C75756100246809 /* UIImage+GImage.m in Sources */,
 				45E57D661C7EFECF000ADB34 /* GTableViewCell.m in Sources */,
 				455733671C59C50300C0D76E /* ViewController.m in Sources */,

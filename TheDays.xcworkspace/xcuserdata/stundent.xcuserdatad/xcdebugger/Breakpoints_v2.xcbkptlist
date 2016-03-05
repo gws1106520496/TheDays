@@ -17,6 +17,38 @@
             endingLineNumber = "75"
             landmarkName = "-registerAction:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[RegisterViewController registerAction:]_block_invoke_2"
+                  moduleName = "TheDays"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stundent/Desktop/%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE/TheDays%E5%89%AF%E6%9C%AC/TheDays/LoginAndRegister/Controller/RegisterViewController.m"
+                  timestampString = "478793558.805749"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__41-[RegisterViewController registerAction:]_block_invoke_2"
+                  moduleName = "TheDays"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/stundent/Desktop/%E6%88%91%E7%9A%84%E9%A1%B9%E7%9B%AE/TheDays%E5%89%AF%E6%9C%AC/TheDays/LoginAndRegister/Controller/RegisterViewController.m"
+                  timestampString = "478793558.806173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "600">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -36,13 +68,51 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            scope = "0"
-            stopOnStyle = "0">
+            filePath = "TheDays/Main/Model/Events.m"
+            timestampString = "478190188.947847"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "+editEvent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheDays/Main/Controller/AddNewViewController.m"
+            timestampString = "478342372.182775"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-pickerView:titleForRow:forComponent:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheDays/Main/Controller/AddNewViewController.m"
+            timestampString = "478335636.601692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-labelArray"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -52,12 +122,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TheDays/Main/Controller/MyViewController.m"
-            timestampString = "478062200.47389"
+            timestampString = "478665552.226168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-test"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "-downLoadFile"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -39,6 +39,7 @@
     self.navigationController.navigationBarHidden = YES;
     
 //    [self.eventScrollerView reloadInputViews];
+    [self viewDidLoad];
     self.tabBarController.tabBar.hidden = YES;
 }
 - (void)didReceiveMemoryWarning {
@@ -73,13 +74,13 @@
         //使用UIButton
         UIButton *dayButton = [[UIButton alloc]initWithFrame:CGRectMake((winWidth-200*winWidth/320)/2, winHeight*200/568, 200*winWidth/320, 120*winHeight/568)];
         dayButton.titleLabel.font= [UIFont fontWithName:@"MarkerFelt-Wide" size:45.0];
-        dayButton.titleLabel.text = @"sdfsdfsd";
-        [dayButton setTitle:event.date forState:UIControlStateNormal];
+        
+        [dayButton setTitle:[Utils getDistanceDayStr:event.createDate] forState:UIControlStateNormal];
         dayButton.titleLabel.textColor = [UIColor blueColor];
         [eventView addSubview:dayButton];
         
         UILabel *dateLabel = [[UILabel alloc]initWithFrame:CGRectMake((winWidth-200*winWidth/320)/2, winHeight*350/568, 200*winWidth/320, 30*winHeight/568)];
-        dateLabel.text = event.createDate;
+        dateLabel.text = [event.createDate substringToIndex:10];
         dateLabel.textAlignment = NSTextAlignmentCenter;
         [eventView addSubview:dateLabel];
         [self.eventScrollerView addSubview:eventView];
@@ -117,8 +118,10 @@
 - (void)editAction
 {
     AddNewViewController *addNewVC = [[AddNewViewController alloc]init];
-    addNewVC.eventEdit = self.eventArray[self.currentIndex];
+    Events *eventEdit = self.eventArray[self.currentIndex];
+    addNewVC.eventEdit = eventEdit;
     addNewVC.modify = YES;
+    addNewVC.dic = [NSDictionary dictionaryWithObject:eventEdit.imageNum forKey:@"imageNum"];
     [self.navigationController pushViewController:addNewVC animated:YES];
 }
 @end

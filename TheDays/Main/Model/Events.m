@@ -12,7 +12,7 @@ extern sqlite3 *db; //extern 引用外部变量
 //向类发送消息时调用（方法的调用） 而且一般之调用一次
 + (void)initialize
 {
-    NSString *sqlStr = @"create table if not exists e_event (uId integer PRIMARY KEY,phoneNum text NOT NULL,title text NOT NULL,date text NOT NULL,classify text NOT NULL,imageNum text NOT NULL,createDate text NOT NULL,setCover int NOT NULL,fingTag int NOT NULL)";
+    NSString *sqlStr = @"create table if not exists e_event (uId integer PRIMARY KEY,phoneNum text NOT NULL,title text NOT NULL,date text NOT NULL,classify text NOT NULL,imageNum text NOT NULL,createDate text NOT NULL,setCover int NOT NULL,findTag int NOT NULL)";
     [self execSql:sqlStr];
 }
 
@@ -84,7 +84,7 @@ extern sqlite3 *db; //extern 引用外部变量
 
 + (BOOL)insertEvent:(Events *)event
 {
-    NSString *insertSqlStr = [NSString stringWithFormat:@"insert into e_event (phoneNum,title,date,classify,imageNum,createDate,setCover,fingTag) values ('%@','%@','%@','%@','%@','%@','%d','%d')",event.phoneNum,event.title,event.date,event.classify,event.imageNum,event.createDate,event.setCover,event.findTag];
+    NSString *insertSqlStr = [NSString stringWithFormat:@"insert into e_event (phoneNum,title,date,classify,imageNum,createDate,setCover,findTag) values ('%@','%@','%@','%@','%@','%@','%d','%d')",event.phoneNum,event.title,event.date,event.classify,event.imageNum,event.createDate,event.setCover,event.findTag];
     return [self execSql:insertSqlStr];
 }
 

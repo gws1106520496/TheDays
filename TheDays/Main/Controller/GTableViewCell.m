@@ -31,7 +31,7 @@
     cell.eventImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"btnbg%@",cellEvent.imageNum]];
     
     cell.titleLabel.text = cellEvent.title;
-    cell.subTitleLabel.text = cellEvent.createDate;
+    cell.subTitleLabel.text = [cellEvent.createDate substringToIndex:10];
     cell.detailLabel.text = [NSString stringWithFormat:@"%@ 天",cellEvent.date];
     return cell;
 

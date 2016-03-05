@@ -22,5 +22,7 @@
 #define winHeight [UIScreen mainScreen].bounds.size.height
 
 #import "UIView+Toast.h"
+#import "Utils.h"
+#import "MBProgressHUD.h"
 
 #endif /* DayPrefixHeader_pch */

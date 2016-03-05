@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *eventDayStr;
 @property (weak, nonatomic) IBOutlet UILabel *eventCreateDate;
 
+- (IBAction)clickAction:(id)sender;
 @property (nonatomic, strong) NSMutableArray *eventArray;
 @end
 
@@ -42,8 +43,8 @@
     
     event = [[Events alloc]init];
     
-    dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+//    dateFormatter = [[NSDateFormatter alloc]init];
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     
     nowDate = [NSDate date];
     
@@ -100,20 +101,45 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    static NSString *identifier = @"cell";
-//    Events *cellEvent = self.eventArray[indexPath.row];
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-//        
-//    }
-//    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"btnbg%@",cellEvent.imageNum]];
-//    cell.textLabel.text = cellEvent.title;
-//    
-//    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ 天",cellEvent.date];
-//    return cell;
+
     Events *cellEvent = self.eventArray[indexPath.row];
     GTableViewCell *cell = [GTableViewCell createCell:tableView WithEvent:cellEvent];
+//    long dd;
+//    NSString *timeString = @"";
+//    NSDateFormatter *onceFormatter = [[NSDateFormatter alloc]init];
+//    [onceFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+////    NSDate *now1 = [NSDate date];
+//    NSString *dayStr;
+//    
+////    NSString *str1 = [cellEvent.createDate substringToIndex:10];
+//    NSString *nowDateStr = [[[NSString stringWithFormat:@"%@",[NSDate date]] substringToIndex:10] stringByAppendingString:@" 00:01:00"];
+//    NSString *addDateStr = [[cellEvent.createDate substringToIndex:10] stringByAppendingString:@" 00:00:00"];
+//    
+//    NSDate *addDate = [onceFormatter dateFromString:addDateStr];
+//    NSDate *now = [onceFormatter dateFromString:nowDateStr];
+//
+//    if ([now timeIntervalSince1970] > [addDate timeIntervalSince1970]) {
+//        dd = (long)[now timeIntervalSince1970] - [addDate timeIntervalSince1970];
+//        before = YES;
+//    }else{
+//        dd = (long)[addDate timeIntervalSince1970] - [now timeIntervalSince1970];
+//        before = NO;
+//    }
+//    
+//    if (dd/86400>1)
+//    {
+//        timeString = [NSString stringWithFormat:@"%ld",dd/86400];
+//        if (before) {
+//            dayStr = [NSString stringWithFormat:@"+%@",timeString];
+//        }else{
+//            dayStr = [NSString stringWithFormat:@"-%@",timeString];
+//        }
+//        
+//    }else{
+//        dayStr = @"0";
+//    }
+    cell.detailLabel.text = [Utils getDistanceDayStr:cellEvent.createDate];
+
     return cell;
     
 }
@@ -138,14 +164,15 @@
 {
     self.eventTitle.text = coverDic[@"title"];
     self.eventDayStr.text = [NSString stringWithFormat:@"%@ 天",coverDic[@"date"]];
-    self.eventCreateDate.text = coverDic[@"createDate"];
+    self.eventCreateDate.text = [coverDic[@"createDate"] substringToIndex:10];
 }
 
 - (void)setCoverWithEvent:(Events *)coverEvent
 {
     self.eventTitle.text = coverEvent.title;
-    self.eventDayStr.text = [NSString stringWithFormat:@"%@ 天",coverEvent.date];
-    self.eventCreateDate.text = coverEvent.createDate;
+    NSString *s = [Utils getDistanceDayStr:coverEvent.createDate];
+    self.eventDayStr.text = [NSString stringWithFormat:@"%@ 天",s];
+    self.eventCreateDate.text = [coverEvent.createDate substringToIndex:10];
 }
 /*
 #pragma mark - Navigation
@@ -157,4 +184,7 @@
 }
 */
 
+- (IBAction)clickAction:(id)sender {
+    [self tableView:self.listTableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+}
 @end
